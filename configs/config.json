@@ -1,0 +1,25 @@
+{
+  "db_config": {
+      "user": "phoenix",
+      "password": "phoenix",
+      "host": "pgbouncer",
+      "port": "5432",
+      "dbname": "phoenix"
+  },
+  "max_recent_data": 60,
+  "refill_threshold": 10,
+  "theft_threshold": 5,
+  "litre_change_threshold": 5,
+  "nats_servers": "nats://phoenix-nats-client:4222",
+  "processing_subject": "fuel_data_processing",
+  "results_table_1": "smoothed_messagesrealtimemqtt_environmental",
+  "results_table_2": "messagesalerthistory",
+  "results_table_3": "messagesalert",
+  "results_table_4": "daily_fuel_data",
+  "packet_wait_time": 1,
+  "redis_config": {
+  "host": "phoenix-redis",
+  "port": 6379,
+  "db": 0
+}
+}
